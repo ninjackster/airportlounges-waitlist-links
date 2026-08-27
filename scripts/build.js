@@ -5,10 +5,11 @@ const PDFDocument = require('pdfkit');
 const dataPath = path.join(__dirname, '..', 'data', 'lounges.json');
 const readmePath = path.join(__dirname, '..', 'README.md');
 
-// Label for a lounge's action link. Real-time queues say "Join"; advance
-// bookings say "Reserve", so a reservation is never presented as a live queue.
-function actionLabel(l) {
-  return l.link_type === 'reservation' ? 'Reserve' : 'Join Queue';
+// Action-link label. Reservation entries link to an advance booking form, not a
+// live queue, so they must not be labelled as one. The queue wording is passed
+// in because each surface already uses its own.
+function actionLabel(l, queueLabel) {
+  return l.link_type === 'reservation' ? 'Reserve' : queueLabel;
 }
 
 const distDir = path.join(__dirname, '..', 'dist');
@@ -54,7 +55,7 @@ function generateMarkdownTable(lounges) {
   let currentAirport = '';
   lounges.forEach((l) => {
     const qrBadge = l.qr_code_only ? ' `[QR Only]`' : '';
-    const linkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer"><b>${actionLabel(l)}</b> ↗</a>`;
+    const linkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer"><b>${actionLabel(l, 'Join Waitlist')}</b> ↗</a>`;
     const notesDisplay = l.notes ? l.notes.replace(/\|/g, '\\|') : '-';
     const verifiedDisplay = `\`${l.last_verified}\``;
 
@@ -80,7 +81,7 @@ function generateMarkdownTable(lounges) {
     md += `| Airport | Terminal | Lounge | Waitlist Link | Notes |\n`;
     md += `| :--- | :--- | :--- | :--- | :--- |\n`;
     netLounges.forEach((l) => {
-      const netLinkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer">${actionLabel(l)} ↗</a>`;
+      const netLinkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer">${actionLabel(l, 'Join Waitlist')} ↗</a>`;
       md += `| **${l.airport_code}** | ${l.terminal.replace(/\|/g, '\\|')} | ${l.lounge_name.replace(/\|/g, '\\|')} | ${netLinkDisplay} | ${l.notes || '-'} |\n`;
     });
     md += `\n</details>\n\n`;
@@ -627,7 +628,7 @@ function generatePDF(lounges) {
       // Short Clean Hyperlink Button
       doc.rect(cols.link.x - 2, currentY - 1, 72, 14).fillAndStroke('#e0f2fe', '#0284c7');
       doc.fillColor('#0369a1').font('Helvetica-Bold').fontSize(7.5);
-      doc.text(actionLabel(l) + ' ↗', cols.link.x + 6, currentY + 2, {
+      doc.text(actionLabel(l, 'Join Queue') + ' ↗', cols.link.x + 6, currentY + 2, {
         link: l.waitlist_url,
         underline: false,
       });
