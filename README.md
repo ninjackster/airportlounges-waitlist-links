@@ -108,6 +108,10 @@
 
 ---
 
+## 🔗 Related Projects
+
+- 🚦 <a href="https://lounge-waitlist.vercel.app/" target="_blank" rel="noopener noreferrer"><b>Priority Pass LoungeQ</b></a> — live queue tracker showing walk-in-ready vs. active-line status and estimated wait for ~30 US lounges, read from the same public Waitwhile queues this dataset links to. Useful for deciding whether to walk over before you clear security. Source: <a href="https://github.com/manojnagendra/priority-pass-lounge-waitlist-monitor" target="_blank" rel="noopener noreferrer">manojnagendra/priority-pass-lounge-waitlist-monitor</a>. Independent project, not affiliated with this one.
+
 ## 🤝 Contributing
 
 Found a new lounge waitlist link or notice an expired queue URL? We'd love your contribution!
