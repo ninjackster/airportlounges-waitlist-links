@@ -1,6 +1,6 @@
 # ✈️ Airport Lounges Waitlist Links
 
-[![Lounges Count](https://img.shields.io/badge/Lounges_Tracked-25-blue.svg?style=for-the-badge&logo=aer-lingus)](data/lounges.json)
+[![Lounges Count](https://img.shields.io/badge/Lounges_Tracked-32-blue.svg?style=for-the-badge&logo=aer-lingus)](data/lounges.json)
 [![Download PDF](https://img.shields.io/badge/Download-PDF_Directory-red.svg?style=for-the-badge&logo=adobe-acrobat-reader)](assets/lounges.pdf)
 [![Live Interactive Search](https://img.shields.io/badge/Search_%26_Filter-Live_Web_App-brightgreen.svg?style=for-the-badge&logo=safari)](https://summyfeb12.github.io/airportlounges-waitlist-links/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
@@ -23,10 +23,10 @@
 ### ⚡ Quick Navigation / Jump Filter
 
 **By Airport Code:**
-[`ATL`](#atl) · [`BOS`](#bos) · [`BUF`](#buf) · [`BWI`](#bwi) · [`CHS`](#chs) · [`CLE`](#cle) · [`CLT`](#clt) · [`CVG`](#cvg) · [`DFW`](#dfw) · [`GRR`](#grr) · [`LAS`](#las) · [`MCO`](#mco) · [`MDW`](#mdw) · [`MSY`](#msy) · [`PIT`](#pit) · [`SAN`](#san) · [`SEA`](#sea) · [`SFO`](#sfo) · [`SJC`](#sjc)
+[`ATL`](#atl) · [`BOS`](#bos) · [`BUF`](#buf) · [`BWI`](#bwi) · [`CHS`](#chs) · [`CLE`](#cle) · [`CLT`](#clt) · [`CVG`](#cvg) · [`DFW`](#dfw) · [`GRR`](#grr) · [`LAS`](#las) · [`MCO`](#mco) · [`MDW`](#mdw) · [`MEX`](#mex) · [`MSY`](#msy) · [`NLU`](#nlu) · [`OAK`](#oak) · [`PIT`](#pit) · [`SAN`](#san) · [`SEA`](#sea) · [`SFO`](#sfo) · [`SJC`](#sjc)
 
 **By Network:**
-[`Plaza Premium`](#plaza-premium) · [`Priority Pass`](#priority-pass) · [`The Club`](#the-club)
+[`Escape Lounges`](#escape-lounges) · [`Independent`](#independent) · [`Plaza Premium`](#plaza-premium) · [`Priority Pass`](#priority-pass) · [`The Club`](#the-club)
 
 ---
 
@@ -51,7 +51,14 @@
 | <a id="mco"></a>**MCO**<br>_Orlando_ | Terminal A, Concourse 1, near Gate 29 | **The Club MCO (Terminal A)** | `The Club` | <a href="https://waitwhile.com/locations/the-club-mco-a1" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Direct Waitwhile queue link for Terminal A Concourse 1. | `2026-08-14` |
 | **MCO**<br>_Orlando_ | Terminal B, Concourse 4, near Gate 91 | **The Club MCO (Terminal B)** | `The Club` | <a href="https://waitwhile.com/locations/the-club-mco-a4" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Direct Waitwhile queue link for Terminal B Concourse 4. | `2026-08-14` |
 | <a id="mdw"></a>**MDW**<br>_Chicago_ | Central Market, near Gate A1 | **The Club MDW** | `The Club` | <a href="https://waitwhile.com/locations/the-club-mdw" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | First lounge at MDW. Priority Pass and day passes accepted via Waitwhile queue. | `2026-08-14` |
+| <a id="mex"></a>**MEX**<br>_Mexico City_ | Terminal 1 | **Celeste Lounge Elite** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/celeste-lounge-elite" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite. | `2026-08-27` |
+| **MEX**<br>_Mexico City_ | Terminal 1, Concourse H, across from Duty Free | **Haven (VISA)** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/haven-visa" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. VISA Infinite cardholders only. Operator's own booking form, run by The Grand Lounge Elite. | `2026-08-27` |
+| **MEX**<br>_Mexico City_ | Terminal 1, opposite gate 19 | **Lounge 19** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/lounge-19" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite. | `2026-08-27` |
+| **MEX**<br>_Mexico City_ | Terminal 1, at gate 19 | **The Grand Lounge Elite** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. | `2026-08-27` |
 | <a id="msy"></a>**MSY**<br>_New Orleans_ | Concourse A, 3rd floor across from Gate A1 | **The Club MSY** | `The Club` | <a href="https://waitwhile.com/locations/the-club-msy" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Waitwhile queue for post-security Concourse A lounge. | `2026-08-14` |
+| <a id="nlu"></a>**NLU**<br>_Mexico City_ | Main Terminal | **The Grand Lounge Elite AIFA** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite-aifa" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Open 24 hours. Operator's own booking form, pre-set to this lounge. | `2026-08-27` |
+| **NLU**<br>_Mexico City_ | Main Terminal | **The Grand Sports Lounge** | `Independent` | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-sports-lounge-aifa" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form, pre-set to this lounge. Run by The Grand Lounge Elite. | `2026-08-27` |
+| <a id="oak"></a>**OAK**<br>_Oakland_ | Terminal 1, opposite Gate 9 | **Escape Lounge OAK** | `Escape Lounges` | <a href="https://oak.book.escapelounges.com/lounges/dates/" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Advance reservation, not a real-time queue. Escape Lounges' own booking engine. Book at least 24 hours ahead; cheaper than walking up. Amex Platinum and Delta Reserve access at the door. | `2026-08-27` |
 | <a id="pit"></a>**PIT**<br>_Pittsburgh_ | Concourse C, near Gate C1 | **The Club PIT** | `The Club` | <a href="https://waitwhile.com/locations/the-club-pit" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Priority Pass accepted. Join digital queue via Waitwhile. | `2026-08-14` |
 | <a id="san"></a>**SAN**<br>_San Diego_ | Terminal 2, between the T2 East checkpoint and the bridge to T2 West | **Aspire Lounge SAN** | `Priority Pass` | <a href="https://20901.waitwell.ca/?c=qr" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | WaitWell queue, not Waitwhile. Amex and Priority Pass guests join the waitlist when the lounge is at capacity; British Airways passengers and Admirals Club members go directly to the front desk. | `2026-08-27` |
 | <a id="sea"></a>**SEA**<br>_Seattle_ | Concourse A, near Gate A11 | **The Club SEA (Concourse A)** | `The Club` | <a href="https://waitwhile.com/locations/the-club-sea-a" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a> | Waitwhile queue for Concourse A location. | `2026-08-14` |
@@ -63,6 +70,29 @@
 ---
 
 ### 🌐 Lounges by Network
+
+<details id="escape-lounges">
+<summary><b>Escape Lounges (1)</b></summary>
+
+| Airport | Terminal | Lounge | Waitlist Link | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **OAK** | Terminal 1, opposite Gate 9 | Escape Lounge OAK | <a href="https://oak.book.escapelounges.com/lounges/dates/" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Escape Lounges' own booking engine. Book at least 24 hours ahead; cheaper than walking up. Amex Platinum and Delta Reserve access at the door. |
+
+</details>
+
+<details id="independent">
+<summary><b>Independent (6)</b></summary>
+
+| Airport | Terminal | Lounge | Waitlist Link | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **MEX** | Terminal 1 | Celeste Lounge Elite | <a href="https://thegrandloungeelite.com.mx/en/lounge/celeste-lounge-elite" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite. |
+| **MEX** | Terminal 1, Concourse H, across from Duty Free | Haven (VISA) | <a href="https://thegrandloungeelite.com.mx/en/lounge/haven-visa" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. VISA Infinite cardholders only. Operator's own booking form, run by The Grand Lounge Elite. |
+| **MEX** | Terminal 1, opposite gate 19 | Lounge 19 | <a href="https://thegrandloungeelite.com.mx/en/lounge/lounge-19" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite. |
+| **MEX** | Terminal 1, at gate 19 | The Grand Lounge Elite | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. |
+| **NLU** | Main Terminal | The Grand Lounge Elite AIFA | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite-aifa" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Open 24 hours. Operator's own booking form, pre-set to this lounge. |
+| **NLU** | Main Terminal | The Grand Sports Lounge | <a href="https://thegrandloungeelite.com.mx/en/lounge/the-grand-sports-lounge-aifa" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a> | Advance reservation, not a real-time queue. Operator's own booking form, pre-set to this lounge. Run by The Grand Lounge Elite. |
+
+</details>
 
 <details id="plaza-premium">
 <summary><b>Plaza Premium (2)</b></summary>
