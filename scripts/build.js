@@ -4,6 +4,13 @@ const PDFDocument = require('pdfkit');
 
 const dataPath = path.join(__dirname, '..', 'data', 'lounges.json');
 const readmePath = path.join(__dirname, '..', 'README.md');
+
+// Label for a lounge's action link. Real-time queues say "Join"; advance
+// bookings say "Reserve", so a reservation is never presented as a live queue.
+function actionLabel(l) {
+  return l.link_type === 'reservation' ? 'Reserve' : 'Join Queue';
+}
+
 const distDir = path.join(__dirname, '..', 'dist');
 const assetsDir = path.join(__dirname, '..', 'assets');
 
@@ -47,7 +54,7 @@ function generateMarkdownTable(lounges) {
   let currentAirport = '';
   lounges.forEach((l) => {
     const qrBadge = l.qr_code_only ? ' `[QR Only]`' : '';
-    const linkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer"><b>Join Waitlist</b> ↗</a>`;
+    const linkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer"><b>${actionLabel(l)}</b> ↗</a>`;
     const notesDisplay = l.notes ? l.notes.replace(/\|/g, '\\|') : '-';
     const verifiedDisplay = `\`${l.last_verified}\``;
 
@@ -73,7 +80,7 @@ function generateMarkdownTable(lounges) {
     md += `| Airport | Terminal | Lounge | Waitlist Link | Notes |\n`;
     md += `| :--- | :--- | :--- | :--- | :--- |\n`;
     netLounges.forEach((l) => {
-      const netLinkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer">Join Waitlist ↗</a>`;
+      const netLinkDisplay = `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer">${actionLabel(l)} ↗</a>`;
       md += `| **${l.airport_code}** | ${l.terminal.replace(/\|/g, '\\|')} | ${l.lounge_name.replace(/\|/g, '\\|')} | ${netLinkDisplay} | ${l.notes || '-'} |\n`;
     });
     md += `\n</details>\n\n`;
@@ -501,7 +508,7 @@ function generateWebSearchApp(lounges) {
           </div>
           <div class="card-footer">
             <span class="verified-text">Verified: \${l.last_verified}</span>
-            <a href="\${l.waitlist_url}" target="_blank" rel="noopener noreferrer" class="link-btn">Join Queue ↗</a>
+            <a href="\${l.waitlist_url}" target="_blank" rel="noopener noreferrer" class="link-btn">\${l.link_type === 'reservation' ? 'Reserve' : 'Join Queue'} ↗</a>
           </div>
         </div>
       \`).join('');
@@ -620,7 +627,7 @@ function generatePDF(lounges) {
       // Short Clean Hyperlink Button
       doc.rect(cols.link.x - 2, currentY - 1, 72, 14).fillAndStroke('#e0f2fe', '#0284c7');
       doc.fillColor('#0369a1').font('Helvetica-Bold').fontSize(7.5);
-      doc.text('Join Queue ↗', cols.link.x + 6, currentY + 2, {
+      doc.text(actionLabel(l) + ' ↗', cols.link.x + 6, currentY + 2, {
         link: l.waitlist_url,
         underline: false,
       });

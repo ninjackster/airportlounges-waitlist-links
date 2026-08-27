@@ -9,6 +9,7 @@
     "lounge_name": "The Club ATL",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-atl",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass and day-pass accepted. Join Waitwhile queue when full.",
     "last_verified": "2026-08-14"
@@ -23,6 +24,7 @@
     "lounge_name": "The Lounge BOS (The Club)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-bos",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Direct Waitwhile queue link for Terminal C lounge.",
     "last_verified": "2026-08-14"
@@ -37,6 +39,7 @@
     "lounge_name": "The Club BUF",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-buf",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass accessible. Mobile queue via Waitwhile.",
     "last_verified": "2026-08-14"
@@ -51,6 +54,7 @@
     "lounge_name": "The Club BWI",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-bwi",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass accepted. Join digital line via Waitwhile.",
     "last_verified": "2026-08-14"
@@ -65,6 +69,7 @@
     "lounge_name": "The Club CHS",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-chs",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Accessible to all ticketed passengers post-security.",
     "last_verified": "2026-08-14"
@@ -79,6 +84,7 @@
     "lounge_name": "The Club CLE",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-cle",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Digital Waitwhile waitlist active during peak bank departures.",
     "last_verified": "2026-08-14"
@@ -93,6 +99,7 @@
     "lounge_name": "The Club CLT",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-clt",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Two-story lounge in Concourse A expansion. Priority Pass accepted.",
     "last_verified": "2026-08-14"
@@ -107,6 +114,7 @@
     "lounge_name": "The Club CVG",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-cvg",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue available when lounge reaches capacity.",
     "last_verified": "2026-08-14"
@@ -121,6 +129,7 @@
     "lounge_name": "Plaza Premium Lounge",
     "network": "Plaza Premium",
     "waitlist_url": "https://waitwhile.com/locations/plazapremiumloungete0934?registration=waitlist",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass and Capital One cardholder access accepted. Join digital Waitwhile waitlist when full.",
     "last_verified": "2026-08-14"
@@ -135,6 +144,7 @@
     "lounge_name": "The Club DFW",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-dfw",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Accessible from all terminals via Skylink train.",
     "last_verified": "2026-08-14"
@@ -149,6 +159,7 @@
     "lounge_name": "Plaza Premium Lounge",
     "network": "Plaza Premium",
     "waitlist_url": "https://waitwhile.com/locations/plazapremiumdfw/party-size?qr=true",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass and Capital One cardholder access accepted. Join digital Waitwhile waitlist when full.",
     "last_verified": "2026-08-27"
@@ -163,6 +174,7 @@
     "lounge_name": "The Club GRR",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-grr",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for post-security lounge in Concourse A.",
     "last_verified": "2026-08-14"
@@ -177,6 +189,7 @@
     "lounge_name": "The Club LAS (Terminal 3)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-las-t3",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Direct Waitwhile queue for Terminal 3.",
     "last_verified": "2026-08-14"
@@ -191,6 +204,7 @@
     "lounge_name": "The Club LAS (Terminal 1D)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-las-t1",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Direct Waitwhile queue for Terminal 1 Concourse D.",
     "last_verified": "2026-08-14"
@@ -205,6 +219,7 @@
     "lounge_name": "The Club MCO (Terminal A)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-mco-a1",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Direct Waitwhile queue link for Terminal A Concourse 1.",
     "last_verified": "2026-08-14"
@@ -219,6 +234,7 @@
     "lounge_name": "The Club MCO (Terminal B)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-mco-a4",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Direct Waitwhile queue link for Terminal B Concourse 4.",
     "last_verified": "2026-08-14"
@@ -233,6 +249,7 @@
     "lounge_name": "The Club MDW",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-mdw",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "First lounge at MDW. Priority Pass and day passes accepted via Waitwhile queue.",
     "last_verified": "2026-08-14"
@@ -247,6 +264,7 @@
     "lounge_name": "Celeste Lounge Elite",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/celeste-lounge-elite",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite.",
     "last_verified": "2026-08-27"
@@ -261,6 +279,7 @@
     "lounge_name": "Haven (VISA)",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/haven-visa",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. VISA Infinite cardholders only. Operator's own booking form, run by The Grand Lounge Elite.",
     "last_verified": "2026-08-27"
@@ -275,6 +294,7 @@
     "lounge_name": "Lounge 19",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/lounge-19",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge. Run by The Grand Lounge Elite.",
     "last_verified": "2026-08-27"
@@ -289,6 +309,7 @@
     "lounge_name": "The Grand Lounge Elite",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Operator's own booking form on the lounge page, pre-set to this lounge.",
     "last_verified": "2026-08-27"
@@ -303,6 +324,7 @@
     "lounge_name": "The Club MSY",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-msy",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for post-security Concourse A lounge.",
     "last_verified": "2026-08-14"
@@ -317,6 +339,7 @@
     "lounge_name": "The Grand Lounge Elite AIFA",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/the-grand-lounge-elite-aifa",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Open 24 hours. Operator's own booking form, pre-set to this lounge.",
     "last_verified": "2026-08-27"
@@ -331,6 +354,7 @@
     "lounge_name": "The Grand Sports Lounge",
     "network": "Independent",
     "waitlist_url": "https://thegrandloungeelite.com.mx/en/lounge/the-grand-sports-lounge-aifa",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Operator's own booking form, pre-set to this lounge. Run by The Grand Lounge Elite.",
     "last_verified": "2026-08-27"
@@ -345,6 +369,7 @@
     "lounge_name": "Escape Lounge OAK",
     "network": "Escape Lounges",
     "waitlist_url": "https://oak.book.escapelounges.com/lounges/dates/",
+    "link_type": "reservation",
     "qr_code_only": false,
     "notes": "Advance reservation, not a real-time queue. Escape Lounges' own booking engine. Book at least 24 hours ahead; cheaper than walking up. Amex Platinum and Delta Reserve access at the door.",
     "last_verified": "2026-08-27"
@@ -359,6 +384,7 @@
     "lounge_name": "The Club PIT",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-pit",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Priority Pass accepted. Join digital queue via Waitwhile.",
     "last_verified": "2026-08-14"
@@ -373,6 +399,7 @@
     "lounge_name": "Aspire Lounge SAN",
     "network": "Priority Pass",
     "waitlist_url": "https://20901.waitwell.ca/?c=qr",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "WaitWell queue, not Waitwhile. Amex and Priority Pass guests join the waitlist when the lounge is at capacity; British Airways passengers and Admirals Club members go directly to the front desk.",
     "last_verified": "2026-08-27"
@@ -387,6 +414,7 @@
     "lounge_name": "The Club SEA (Concourse A)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-sea-a",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for Concourse A location.",
     "last_verified": "2026-08-14"
@@ -401,6 +429,7 @@
     "lounge_name": "The Club SEA (South Satellite)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-sea-s",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for South Satellite airside lounge.",
     "last_verified": "2026-08-14"
@@ -415,6 +444,7 @@
     "lounge_name": "The Club SFO",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-sfo",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Features microclimate fireplace, fitness room, and local microbrews.",
     "last_verified": "2026-08-14"
@@ -429,6 +459,7 @@
     "lounge_name": "The Club SJC (Gate 15)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-sjc-a15",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for Terminal A Gate 15 location.",
     "last_verified": "2026-08-14"
@@ -443,6 +474,7 @@
     "lounge_name": "The Club SJC (Gate 8)",
     "network": "The Club",
     "waitlist_url": "https://waitwhile.com/locations/the-club-sjc-a8",
+    "link_type": "queue",
     "qr_code_only": false,
     "notes": "Waitwhile queue for Terminal A Gate 8 location.",
     "last_verified": "2026-08-14"

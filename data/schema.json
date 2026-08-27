@@ -71,6 +71,15 @@
         "format": "uri",
         "pattern": "^https?://.*"
       },
+      "link_type": {
+        "type": "string",
+        "enum": [
+          "queue",
+          "reservation"
+        ],
+        "default": "queue",
+        "description": "queue = real-time waitlist you join on the spot; reservation = advance booking for a chosen date/time"
+      },
       "qr_code_only": {
         "type": "boolean",
         "default": false
