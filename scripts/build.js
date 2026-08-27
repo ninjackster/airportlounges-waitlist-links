@@ -95,7 +95,7 @@ function updateReadme(tableContent, totalCount) {
 
 [![Lounges Count](https://img.shields.io/badge/Lounges_Tracked-${totalCount}-blue.svg?style=for-the-badge&logo=aer-lingus)](data/lounges.json)
 [![Download PDF](https://img.shields.io/badge/Download-PDF_Directory-red.svg?style=for-the-badge&logo=adobe-acrobat-reader)](assets/lounges.pdf)
-[![Live Interactive Search](https://img.shields.io/badge/Search_%26_Filter-Live_Web_App-brightgreen.svg?style=for-the-badge&logo=safari)](https://summyfeb12.github.io/airportlounges-waitlist-links/)
+[![Live Interactive Search](https://img.shields.io/badge/Search_%26_Filter-Live_Web_App-brightgreen.svg?style=for-the-badge&logo=safari)](https://ninjackster.github.io/airportlounges-waitlist-links/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
 [![License: Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg?style=for-the-badge)](LICENSE)
 
@@ -106,7 +106,7 @@ function updateReadme(tableContent, totalCount) {
 
 ### 📥 Export & Quick Access Options
 - 📄 <a href="assets/lounges.pdf" target="_blank" rel="noopener noreferrer"><b>Download PDF Quick-Sheet</b></a> (Printable / Offline access)
-- 🔍 <a href="https://summyfeb12.github.io/airportlounges-waitlist-links/" target="_blank" rel="noopener noreferrer"><b>Interactive Search & Filter Web App</b></a> (Instant mobile search by airport, terminal, or network)
+- 🔍 <a href="https://ninjackster.github.io/airportlounges-waitlist-links/" target="_blank" rel="noopener noreferrer"><b>Interactive Search & Filter Web App</b></a> (Instant mobile search by airport, terminal, or network)
 - 💾 <a href="data/lounges.json" target="_blank" rel="noopener noreferrer"><b>Raw JSON Dataset</b></a>
 
 ---
@@ -408,7 +408,7 @@ function generateWebSearchApp(lounges) {
       <h1>Airport Lounges Waitlist Directory</h1>
       <p class="subtitle">Search, filter, and access official digital waitlist & mobile check-in links before arriving at the lounge.</p>
       <div class="actions-bar">
-        <a href="https://github.com/summyfeb12/airportlounges-waitlist-links" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">⭐ GitHub Repository</a>
+        <a href="https://github.com/ninjackster/airportlounges-waitlist-links" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">⭐ GitHub Repository</a>
         <a href="lounges.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📄 Download PDF Directory</a>
       </div>
     </header>
@@ -566,7 +566,7 @@ function generatePDF(lounges) {
     function drawPageHeader() {
       doc.fillColor('#0f172a').fontSize(15).font('Helvetica-Bold').text('Airport Lounges Waitlist Directory', margin, margin);
       doc.fontSize(8).font('Helvetica').fillColor('#64748b').text(
-        `Curated crowd-sourced directory · ${lounges.length} lounges verified · Last updated: ${formattedTimestamp} · https://github.com/summyfeb12/airportlounges-waitlist-links`,
+        `Curated crowd-sourced directory · ${lounges.length} lounges verified · Last updated: ${formattedTimestamp} · https://github.com/ninjackster/airportlounges-waitlist-links`,
         margin,
         margin + 18
       );
