@@ -2,7 +2,7 @@
 
 [![Lounges Count](https://img.shields.io/badge/Lounges_Tracked-32-blue.svg?style=for-the-badge&logo=aer-lingus)](data/lounges.json)
 [![Download PDF](https://img.shields.io/badge/Download-PDF_Directory-red.svg?style=for-the-badge&logo=adobe-acrobat-reader)](assets/lounges.pdf)
-[![Live Interactive Search](https://img.shields.io/badge/Search_%26_Filter-Live_Web_App-brightgreen.svg?style=for-the-badge&logo=safari)](https://summyfeb12.github.io/airportlounges-waitlist-links/)
+[![Live Interactive Search](https://img.shields.io/badge/Search_%26_Filter-Live_Web_App-brightgreen.svg?style=for-the-badge&logo=safari)](https://ninjackster.github.io/airportlounges-waitlist-links/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
 [![License: Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg?style=for-the-badge)](LICENSE)
 
@@ -14,7 +14,7 @@
 ### 📥 Export & Quick Access Options
 
 - 📄 <a href="assets/lounges.pdf" target="_blank" rel="noopener noreferrer"><b>Download PDF Quick-Sheet</b></a> (Printable / Offline access)
-- 🔍 <a href="https://summyfeb12.github.io/airportlounges-waitlist-links/" target="_blank" rel="noopener noreferrer"><b>Interactive Search & Filter Web App</b></a> (Instant mobile search by airport, terminal, or network)
+- 🔍 <a href="https://ninjackster.github.io/airportlounges-waitlist-links/" target="_blank" rel="noopener noreferrer"><b>Interactive Search & Filter Web App</b></a> (Instant mobile search by airport, terminal, or network)
 - 💾 <a href="data/lounges.json" target="_blank" rel="noopener noreferrer"><b>Raw JSON Dataset</b></a>
 
 ---
