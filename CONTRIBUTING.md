@@ -63,13 +63,39 @@ Entries in [`data/lounges.json`](data/lounges.json) must include the following a
 | `lounge_name` | `string` | **Yes** | Full lounge title | `"Delta Sky Club"` |
 | `network` | `string` | **Yes** | One of the supported networks (see below) | `"Delta Sky Club"` |
 | `access_method` | `string` | No | `"web"` (default, for all public URLs & QR placard links) or `"app"` (native mobile app only) | `"web"` |
-| `waitlist_url` | `string` | Conditional | Working HTTPS queue or booking link. Required when `access_method` is `"web"`; optional when `"app"`. | `"https://..."` |
-| `link_type` | `string` | No | `"queue"` (default, real-time waitlist) or `"reservation"` (advance booking form) | `"queue"` |
+| `waitlist_url` | `string` | Conditional | Working HTTPS link to a **free real-time queue** — join now, get called. | `"https://waitwhile.com/locations/..."` |
+| `booking_url` | `string` | Conditional | Working HTTPS link to an **advance reservation** for a chosen date and time, on the operator's own site. | `"https://oak.book.escapelounges.com/lounges/dates/"` |
+| `booking_cost` | `string` | Conditional | `"cash"`, `"credit"` or `"free"` — see below. Required whenever `booking_url` is present. | `"cash"` |
 | `notes` | `string` | Conditional | Timing restrictions, entry rules, or in-app path instructions (required if `access_method` is `"app"`). | `"Join waitlist via Fly Delta App > Airport Lounge Access."` |
 | `last_verified` | `string` | **Yes** | Date link was tested (`YYYY-MM-DD`) | `"2026-08-27"` |
 
 ### 💡 Access Methods & QR Codes:
 - **`web` (Default)**: Any queue with a public HTTPS URL (e.g. Waitwhile, WaitWell, online reservation). If a lounge posts a QR code on a door placard that opens a web queue link in your phone's browser, extract the URL and submit it as `access_method: "web"`.
+### Queue or booking — the two URL fields
+
+A lounge may have either, both, or neither:
+
+- **`waitlist_url`** is a free real-time queue. You join, you walk away, you get a text. This is what the project is for.
+- **`booking_url`** is an advance reservation for a date and time. It usually costs something, which is why it is a separate field rather than a flavour of the same one.
+
+Aspire San Diego has both: a WaitWell queue at the door and an Aspire booking page online. One row, two fields.
+
+### `booking_cost` — why it is not a boolean
+
+Booking is not simply "paid". A Priority Pass or DragonPass member pre-booking is spending a **membership credit**, and pays cash only if they are short of credits on the day. Aspire's own FAQ:
+
+> "If you have reserved for more than one person, but do not have enough credits on your card for this on the day, you will be asked to pay the walk-up price at the lounge or you will be denied entry."
+
+So three values:
+
+| value | meaning |
+|---|---|
+| `cash` | Money to hold the slot — Escape Lounges, Plaza Premium, The Grand Lounge Elite |
+| `credit` | Settled against a Priority Pass / DragonPass / Dreamfolks credit; cash only if short |
+| `free` | A reservation that costs nothing |
+
+If you cannot confirm which, leave `booking_url` out rather than guessing. Telling someone a booking is free when it is not is worse than not listing it.
+
 - **`app`**: Cardmember/airline queues that exist strictly inside a closed mobile application (e.g. Amex Centurion in the Amex App, Delta Sky Club in the Fly Delta App). For these, set `access_method: "app"`, leave `waitlist_url` optional, and describe the exact in-app tap steps in `notes`.
 
 ### Supported `network` values:
@@ -116,6 +142,7 @@ Entries in [`data/lounges.json`](data/lounges.json) must include the following a
 All Pull Requests trigger an automated CI check (`.github/workflows/validate-pr.yml`). The PR check will fail if:
 1. Schema validation fails on `data/lounges.json`.
 2. Any `id` doesn't follow the `<iata>-<terminal>-<slug>` convention or is a duplicate.
-3. Any `waitlist_url` is not a valid HTTPS URL.
+3. Any `waitlist_url` or `booking_url` is not a valid HTTPS URL.
+4. A `booking_url` is present without a `booking_cost`, or the reverse.
 4. The dataset is out of sort order (run `npm run build` to fix).
 5. The `README.md` table is out of sync with `data/lounges.json`.

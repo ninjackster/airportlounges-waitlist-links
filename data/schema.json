@@ -79,14 +79,20 @@
         "format": "uri",
         "pattern": "^https?://.*"
       },
-      "link_type": {
+      "booking_url": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://.*",
+        "description": "Advance reservation for a chosen date and time, on the operator's own site. Distinct from waitlist_url, which is a free real-time queue. A lounge may have either, both, or neither."
+      },
+      "booking_cost": {
         "type": "string",
         "enum": [
-          "queue",
-          "reservation"
+          "cash",
+          "credit",
+          "free"
         ],
-        "default": "queue",
-        "description": "queue = real-time waitlist joined on the spot; reservation = advance booking for a chosen date and time"
+        "description": "What booking actually costs. cash = money to hold the slot. credit = settled against a Priority Pass / DragonPass / Dreamfolks credit, cash only if the member is short. free = costs nothing. Required whenever booking_url is present."
       },
       "notes": {
         "type": "string"

@@ -83,18 +83,30 @@ function validate() {
         }
       }
     } else {
-      // web access method requires a valid waitlist_url
-      if (!lounge.waitlist_url) {
-        console.error(`❌ ${prefix}: 'waitlist_url' is required for access_method 'web'.`);
+      // A web lounge needs a way in: a free queue, a bookable slot, or both.
+      if (!lounge.waitlist_url && !lounge.booking_url) {
+        console.error(`❌ ${prefix}: access_method 'web' needs 'waitlist_url', 'booking_url', or both.`);
         hasErrors = true;
-      } else {
+      }
+      for (const field of ['waitlist_url', 'booking_url']) {
+        if (!lounge[field]) continue;
         try {
-          new URL(lounge.waitlist_url);
+          new URL(lounge[field]);
         } catch {
-          console.error(`❌ ${prefix}: Invalid waitlist_url '${lounge.waitlist_url}'`);
+          console.error(`❌ ${prefix}: Invalid ${field} '${lounge[field]}'`);
           hasErrors = true;
         }
       }
+    }
+
+    // Booking costs money or a membership credit — say which.
+    if (lounge.booking_url && !lounge.booking_cost) {
+      console.error(`❌ ${prefix}: 'booking_url' requires 'booking_cost' (cash, credit or free).`);
+      hasErrors = true;
+    }
+    if (lounge.booking_cost && !lounge.booking_url) {
+      console.error(`❌ ${prefix}: 'booking_cost' set with no 'booking_url'.`);
+      hasErrors = true;
     }
   });
 

@@ -8,7 +8,15 @@ const readmePath = path.join(__dirname, '..', 'README.md');
 // Action-link label and display helpers
 function actionLabel(l, queueLabel) {
   if (l.access_method === 'app') return 'In-App Queue';
-  return l.link_type === 'reservation' ? 'Reserve' : queueLabel;
+  // Which field is present is the type: a free queue, or a paid booking.
+  return l.booking_url && !l.waitlist_url ? 'Reserve' : queueLabel;
+}
+
+// Booking costs money or a membership credit, so say which rather than
+// letting a Reserve link look like a free queue.
+const COST_NOTE = { cash: 'paid booking', credit: 'uses a lounge credit', free: 'free to book' };
+function actionUrl(l) {
+  return l.waitlist_url || l.booking_url || '';
 }
 
 function renderLinkDisplay(l, queueLabel) {
@@ -18,7 +26,10 @@ function renderLinkDisplay(l, queueLabel) {
     }
     return `<span>📱 In-App Only</span>`;
   }
-  return `<a href="${l.waitlist_url}" target="_blank" rel="noopener noreferrer"><b>${actionLabel(l, queueLabel)}</b> ↗</a>`;
+  const url = actionUrl(l);
+  if (!url) return `<span>—</span>`;
+  const cost = (!l.waitlist_url && l.booking_cost) ? ` <sub>${COST_NOTE[l.booking_cost] || ''}</sub>` : '';
+  return `<a href="${url}" target="_blank" rel="noopener noreferrer"><b>${actionLabel(l, queueLabel)}</b> ↗</a>${cost}`;
 }
 
 const distDir = path.join(__dirname, '..', 'dist');
@@ -520,7 +531,7 @@ function generateWebSearchApp(lounges) {
           }
         } else {
           const btnLabel = l.link_type === 'reservation' ? 'Reserve' : 'Join Queue';
-          actionBtn = \`<a href="\${l.waitlist_url}" target="_blank" rel="noopener noreferrer" class="link-btn">\${btnLabel} ↗</a>\`;
+          actionBtn = \`<a href="\${l.waitlist_url || l.booking_url}" target="_blank" rel="noopener noreferrer" class="link-btn">\${btnLabel} ↗</a>\`;
         }
 
         return \`
